@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header #highscore {
+    color: blueviolet;
+}
+
+#page {
+    height: 50vh;
+    display: flex;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#starting-screen p {
+    font-size: 20px;
+    max-width: 60vw;
+    padding: 15px 0 15px 0;
+}
+
+#starting-screen h1 {
+    font-size: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    background-color: blueviolet;
+    border: transparent solid 2px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+    opacity: 50%;
+}
+
+.btn:active {
+    background-color: blueviolet;
+    opacity: 50%;
+}
+
+#block {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: auto;
+}

@@ -6,7 +6,7 @@
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-Open the link: https://davidtjgriffin.github.io/javascript-coding-quiz
+Open the link: https://davidtjgriffin.github.io/javascript-coding-quiz/
 ## Usage
 Answer the questions on the coding quiz 
 

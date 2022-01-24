@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JavaScript Coding Quiz</title>
 </head>
+
 <body>
-   
-    <header>
 
+    <header class="highscore">
+        <h1 id="highscore">
+            View high scores
+        </h1>
+
+        <h1 id="time-remaining">Time: <span id="time">100</span> </h1>
     </header>
+    <div id="page">
+        <main>
+            <section id="starting-screen">
+                <h1 id="title">
+                    JavaScript Coding Quiz
+                </h1>
+                <section id="hidden">
+                    <p>
+                        Try to answer the following code-related questions within the time limit. Keep in mind that
+                        incorrect answers will penalize your score/time by ten seconds!
+                    </p>
+                </section>
+                <section id="block">
+                    <button class="btn" id="btn1">Start Quiz</button>
+                    <button class="btn" id="btn2" style="display: none;">Start Quiz</button>
+                    <button class="btn" id="btn3" style="display: none;">Start Quiz</button>
+                    <button class="btn" id="btn4" style="display: none;">Start Quiz</button>
+                </section>
 
-    <main>
+            </section>
 
-    </main>
 
-    <footer>
-        
-    </footer>
 
+
+
+
+
+
+
+
+
+            <!-- <section id="question-screen" style="display: none;">
+                <h3 id="questionText">Question goes here </h3>>
+                <button id="option1">Answer 1 </button>
+                <button>Answer 2</button>
+                <button>Answer 3</button>
+                <button>Answer 4</button>
+            </section>
+
+            <section id="submitScore" style="display: none;">
+                Final Score
+                <button>Submit Score </button>
+            </section>
+            <section id="ViewScores" style="display: none;">
+                View Highscores
+            </section> -->
+        </main>
+    </div>
+    <script src='./assets/js/script.js'></script>
 </body>
+
 </html>
