@@ -1,6 +1,10 @@
 var hideStart = document.querySelector('.invisible');
-var Btn = document.querySelector('.btn');
+var btn = document.querySelector('.btn');
 var startBtn = document.querySelector('#btn1');
+var btn2 = document.querySelector('#btn2');
+var btn3 = document.querySelector('#btn3');
+var btn4 = document.querySelector('#btn4');
+
 
 var quizQuestions = {
     question1: {
@@ -9,62 +13,74 @@ var quizQuestions = {
         rightAns: "A"
     },
     question2: {
-        question2: "The condition in an if/else statement is enclosed with ________.",
-        choices2: ["quotes", "curly brackets", "parenthesis", "square brackets"],
-        rightAns2: "D"
+        question: "The condition in an if/else statement is enclosed with ________.",
+        choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
+        rightAns: "D"
     },
     question3: {
-        question3: "Arrays in JavaScript can be used to store __________.",
-        choices3: ["numbers and strings", "other arrays", "booleans", "all of the above"],
-        rightAns3: "C"
+        question: "Arrays in JavaScript can be used to store __________.",
+        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        rightAns: "C"
     },
-    question4: {
-        question4: "String values must be enclosed within ___________ when being assigned to variables.",
-        choices4: ["commas", "curly brackets", "quotes", "parenthesis"],
-        rightAns4: "A"
+    question: {
+        question: "String values must be enclosed within ___________ when being assigned to variables.",
+        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+        rightAns: "A"
     },
-    question5: {
-        question5: "A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices5: ["JavaScript", "terminal/bash", "for loops", "console.log"],
-        rightAns5: "B"
+    question: {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["JavaScript", "terminal/bash", "for loops", "console.log"],
+        rightAns: "B"
     }
 
 };
 
 function startQuiz() {
-    console.log('this worked!')
     document.getElementById("hidden").style.display = "none";
     document.getElementById('btn2').style.display = "flex";
     document.getElementById('btn3').style.display = "flex";
     document.getElementById('btn4').style.display = "flex";
-    firstQuestion();
+    question1();
 };
 
-function firstQuestion() {
-    document.getElementById('title').textContent = quizQuestions.question;
+function question1() {
+    document.getElementById('title').textContent = quizQuestions.question1.question;
+    document.getElementById('btn1').textContent = quizQuestions.question1.choices[0];
+    document.getElementById('btn2').textContent = quizQuestions.question1.choices[1];
+    document.getElementById('btn3').textContent = quizQuestions.question1.choices[2];
+    document.getElementById('btn4').textContent = quizQuestions.question1.choices[3];
+    btn3.addEventListener("click", rightAnswer);
+    btn1.addEventListener("click", wrongAnswer);
+    btn2.addEventListener("click", wrongAnswer);
+    btn4.addEventListener("click", wrongAnswer);
+
+    btn3.addEventListener("click", question2);
+    btn1.addEventListener("click", question2);
+    btn2.addEventListener("click", question2);
+    btn4.addEventListener("click", question2);
 };
 
-// function displayQuestionAns() {
-//     console.log("Current Question", quizQuestions[index].question);
-//     console.log("Options", quizQuestions[index].choices);
-//     console.log("Answer is ", quizQuestions[index].rightAns);
-// }
+function rightAnswer() {
+    document.getElementById('grade').textContent = 'Right';
+};
 
+function wrongAnswer() {
+    document.getElementById('grade').textContent = 'Wrong';
+}
 
-// function checkRightWrong() {
-
-//     //Move to next question 
-//     index = index + 1;
-
-//     //Display the QA in the section based on the new index 
-//     displayQuestionAns();
-
-// }
+function question2 () {
+    document.getElementById('title').textContent = quizQuestions.question2.question;
+    var btn1= document.getElementById('btn1').textContent = quizQuestions.question2.choices[0];
+    var btn2= document.getElementById('btn2').textContent = quizQuestions.question2.choices[1];
+    var btn3= document.getElementById('btn3').textContent = quizQuestions.question2.choices[2];
+    var btn4= document.getElementById('btn4').textContent = quizQuestions.question2.choices[3];
+    btn1.className     
+    
+};
 
 
 function endQuiz() {
-    //run out of time or questions 
-    //display score and submit score 
+   
 
 }
 
