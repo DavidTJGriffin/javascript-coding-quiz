@@ -12,12 +12,31 @@
 <body>
 
     <header class="highscore">
-        <h1 id="highscore">
-            View high scores
+        <button id="highscoreBtn">
+            <h1>
+                View high scores
+            </h1>
+        </button>
+
+
+        <h1 id="time-remaining"> <span id="time"></span> </h1>
+    </header>
+    <div id="highScoreSection" style="display: none;">
+
+        <h1>
+            High Scores:
         </h1>
 
-        <h1 id="time-remaining">Time: <span id="time">100</span> </h1>
-    </header>
+        <table id="highScoreTable">
+           
+
+        </table>
+<button class="btn" id="goBack">
+    Go Back
+</button>
+
+
+    </div>
     <div id="page">
         <main>
             <section id="starting-screen">
@@ -31,18 +50,26 @@
                     </p>
                 </section>
                 <section id="block">
-                    <button class="btn" id="btn1">Start Quiz</button>
+                    <button class="btn" id="startBtn">Start Quiz</button>
+                    <button class="btn" id="btn1" style="display: none;">Start Quiz</button>
                     <button class="btn" id="btn2" style="display: none;">Start Quiz</button>
                     <button class="btn" id="btn3" style="display: none;">Start Quiz</button>
                     <button class="btn" id="btn4" style="display: none;">Start Quiz</button>
                 </section>
+                <section id="gameover" style="display: none;">
+                    <h1> All Done !! </h1>
+                    <input id="initialsForm" type="text" placeholder="Enter initials " />
+
+                    <span>Player Score is </span>
+                    <button class="btn" id="btnScore">Submit Score</button>
+                </section>
 
             </section>
-        
+
         </main>
     </div>
     <footer>
-       <h1 id="grade"></h1> 
+        <h1 id="grade"></h1>
     </footer>
 
     <script src='./assets/js/script.js'></script>
