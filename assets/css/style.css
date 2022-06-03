@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #172B36;
+    
+    color: #AFECE7;
 }
 
 header {
@@ -10,7 +13,7 @@ header {
 }
 
 header #highscore {
-    color: blueviolet;
+    color: #AFECE7;
 }
 
 #page {
@@ -38,21 +41,21 @@ main {
 .btn {
     text-decoration: none;
     padding: 10px;
-    background-color: blueviolet;
+    background-color: #99C5B5;;
     border: transparent solid 2px;
     border-radius: 10px;
     font-size: 17px;
-    color: white;
+    color: #172B36;
     margin-top: 20px;
 }
 
 .btn:hover {
-    background-color: blueviolet;
+    background-color: #899E8B;
     opacity: 50%;
 }
 
 .btn:active {
-    background-color: blueviolet;
+    background-color: #899E8B;
     opacity: 50%;
 }
 
@@ -65,7 +68,6 @@ main {
 
 #highscoreBtn {
     background: none;
-	color: blueviolet;
 	border: none;
 	padding: 0;
 	font: inherit;
@@ -85,5 +87,5 @@ footer {
     max-width: 60vw;
     margin: auto;
     margin-top: 40px;
-    border-top: solid black 3px;
+    border-top: solid #FFD9CE 3px;
 }
